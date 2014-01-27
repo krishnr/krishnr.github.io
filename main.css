@@ -17,6 +17,16 @@ body {
 #background {
     height: 100%;
     width: 100%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: brightness(0.7);
+    -webkit-filter: brightness(0.7);
+    -moz-filter: brightness(0.7);
+    -o-filter: brightness(0.7);
+    -ms-filter: brightness(0.7);
 }
 
 #headshot {
@@ -41,6 +51,7 @@ body {
 }
     
 #introText h1 {
+    font-family: yesteryear;
     font-size: 500%;
     text-align:center;
     color: #ffffff;
@@ -71,7 +82,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: 800px;
-    background-color: #e6e9e9;
     margin-top: 7%;
     margin-bottom: 7%;
     padding: 10px;
