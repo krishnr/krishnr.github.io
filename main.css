@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     width: 100%;
     background-color: #ffffff;
-    font-family: source-sans-pro, "Helvetica Neue", sans-serif;
+    font-family: source-sans-pro, sans-serif;
     font-size: 16px;
     color: black;
 }
@@ -51,8 +51,8 @@ body {
 }
     
 #introText h1 {
-    font-family: yesteryear;
-    font-size: 72pt;
+    font-family: yesteryear, cursive;
+    font-size: 60pt;
     text-align:center;
     color: #ffffff;
 }
