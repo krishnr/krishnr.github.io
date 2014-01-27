@@ -17,16 +17,6 @@ body {
 #background {
     height: 100%;
     width: 100%;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: brightness(0.7);
-    -webkit-filter: brightness(0.7);
-    -moz-filter: brightness(0.7);
-    -o-filter: brightness(0.7);
-    -ms-filter: brightness(0.7);
 }
 
 #headshot {
