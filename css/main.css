@@ -1,8 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
+
 body {
-    padding-top: 50px;
+    padding-top: 150px;
+    color: #7B7B7B;
+    font-family: 'Bitter', serif;
+    font-size: 24px;
 }
 
 .header {
     padding: 40px 15px;
     text-align: center;
+    height: 500px;
+    width: 900px;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.header h1 {
+    color: #FFA219;
+    font-size: 62pt;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-align: right;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.navbar {
+    background-color: #FAFAFA;
+    border: 0px;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #afafaf;
+    background-color: #e7e7e7;
+}
+    
+.navbar-default .navbar-brand {
+    color: #FFA219;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 27px;
+}
+
+.container .content p {
+    font-size: 24px;
+}
+
+.content {
+    padding: 30px 45px;
+    text-align: center;
+}
+
+#headshot {
+    max-height: 325px;
+    max-width: 325px;
+    border-radius: 175px;
+    float: left;
+    position: absolute;
+    top: -10%;
+}
+
+.name {
+    position: relative;
+}
+
+.right {
+    float: right;
+}
+
+/*
+grey: #7B7B7B
+orange: #FFA219 
+*/
