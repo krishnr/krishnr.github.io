@@ -1,32 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Bitter);
-@import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps);
-
-body {
-    padding-top: 150px;
-    color: #7B7B7B;
-    font-family: 'Bitter', serif;
-    font-size: 24px;
-}
-
-.header {
-    padding: 40px 15px;
-    text-align: center;
-    height: 500px;
-    width: 900px;
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.header h1 {
-    color: #FFA219;
-    font-size: 62pt;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    text-align: right;
-    padding-top: 70px;
-    padding-bottom: 80px;
-}
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 .navbar {
     background-color: #FAFAFA;
@@ -42,38 +15,77 @@ body {
 }
     
 .navbar-default .navbar-brand {
-    color: #FFA219;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 27px;
+    color: #F3A500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
 }
 
-.container .content p {
-    font-size: 24px;
+body {
+    padding-top: 150px;
+    color: #7B7B7B;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
 }
 
-.content {
-    padding: 30px 45px;
-    text-align: center;
+.header {
+    padding: 40px 15px;
+    position: relative;
 }
 
 #headshot {
     max-height: 325px;
     max-width: 325px;
     border-radius: 175px;
-    float: left;
-    position: absolute;
-    top: -10%;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .name {
+    max-height: 380px;
+    color: #F3A500;
     position: relative;
+    padding-top: 95px;
+    text-align:center;
 }
 
-.right {
-    float: right;
+.name h1 {
+    font-size: 50pt;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
+.tagline {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.tagline p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #7B7B7B;
+    font-family: 'Monteserrat', sans-serif;
+}
+
+.content {
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 600;
+    color: #F3A500;
+    font-size: 45px; 
+}
+    
 /*
 grey: #7B7B7B
-orange: #FFA219 
+orange: #F3A500 
 */
