@@ -7,6 +7,10 @@
     font-size: 15px;
 }
 
+.navbar-default .navbar-nav li a {
+    color: #c5c5c5;
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -34,9 +38,6 @@ body {
 }
 
 #headshot {
-    max-height: 325px;
-    max-width: 325px;
-    border-radius: 175px;
     top: 0;
     left: 0;
     margin-left: auto;
@@ -85,17 +86,13 @@ body {
     font-size: 45px; 
 }
 
-
-
 .footer {
-    background-color: #FAFAFA;
     color: #c5c5c5;
     font-size: 15px;
-    height: 50px;
     padding: 15px;
     margin-top: 60px;
     text-align: center;
-    max-width: 100%;
+    margin-bottom: 0;
 }
 
     
