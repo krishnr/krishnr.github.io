@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 
 .navbar {
     background-color: #FAFAFA;
@@ -20,7 +21,7 @@
     
 .navbar-default .navbar-brand {
     color: #F3A500;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
     font-size: 22px;
 }
@@ -54,7 +55,7 @@ body {
 
 .name h1 {
     font-size: 50pt;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
 }
 
@@ -67,7 +68,7 @@ body {
     font-weight: 500;
     font-size: 22px;
     color: #7B7B7B;
-    font-family: 'Monteserrat', sans-serif;
+    font-family: 'Monteserrat Alternates', sans-serif;
 }
 
 .content {
@@ -80,7 +81,7 @@ body {
 }
 
 .heading {
-    font-family: 'Monteserrat', sans-serif;
+    font-family: 'Monteserrat Alternates', sans-serif;
     font-weight: 600;
     color: #F3A500;
     font-size: 45px; 
