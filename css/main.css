@@ -2,6 +2,13 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 
+#main-container {
+    background: url("../images/background.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: #F3A500;
+    height: 600px;
+}
+
 .navbar {
     background-color: #FAFAFA;
     border: 0px;
@@ -27,7 +34,6 @@
 }
 
 body {
-    padding-top: 150px;
     color: #7B7B7B;
     font-family: 'Bitter', serif;
     font-size: 20px;
@@ -36,6 +42,8 @@ body {
 .header {
     padding: 40px 15px;
     position: relative;
+    height: 400px;
+    margin-top: 100px;
 }
 
 #headshot {
@@ -43,14 +51,14 @@ body {
     left: 0;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 150px;
 }
 
 .name {
     max-height: 380px;
-    color: #F3A500;
     position: relative;
-    padding-top: 95px;
     text-align:center;
+    margin-top: 90px;
 }
 
 .name h1 {
@@ -72,10 +80,9 @@ body {
 }
 
 .content {
-    margin-top: 60px;
-    padding-top: 40px;
+    margin-top: 50px;
     padding-bottom: 40px;
-    max-width: 700px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
 }
