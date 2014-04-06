@@ -116,13 +116,14 @@ body {
 
 /* line 127, scss/main.scss */
 #logo {
+  display: hidden;
   position: fixed;
   top: 100px;
   float: left;
   z-index: -10;
 }
 
-/* line 134, scss/main.scss */
+/* line 135, scss/main.scss */
 .heading {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -130,7 +131,7 @@ body {
   font-size: 45px;
 }
 
-/* line 141, scss/main.scss */
+/* line 142, scss/main.scss */
 .footer {
   color: #c5c5c5;
   font-size: 15px;
