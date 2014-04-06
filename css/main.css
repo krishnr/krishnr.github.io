@@ -116,7 +116,7 @@ body {
 
 /* line 127, scss/main.scss */
 #logo {
-  display: hidden;
+  display: none;
   position: fixed;
   top: 100px;
   float: left;
