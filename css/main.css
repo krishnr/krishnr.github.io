@@ -1,110 +1,134 @@
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
-
+@media screen and (max-width: 991px) {
+  /* line 18, scss/main.scss */
+  body .header {
+    margin-top: 25px;
+  }
+  /* line 22, scss/main.scss */
+  body .name {
+    margin-top: 25px;
+  }
+  /* line 26, scss/main.scss */
+  body .name h1 {
+    font-size: 40pt;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 37, scss/main.scss */
+  body .heading {
+    font-size: 30px;
+  }
+  /* line 41, scss/main.scss */
+  body #logo {
+    display: none;
+  }
+  /* line 45, scss/main.scss */
+  body .content {
+    font-size: 15px;
+  }
+  /* line 49, scss/main.scss */
+  body .footer {
+    font-size: 13px;
+  }
+}
+/* line 55, scss/main.scss */
 #main-container {
-    background: url("../images/background.jpeg") no-repeat center center fixed;
-    background-size: cover;
-    color: #F3A500;
-    height: 600px;
+  background: url("../images/background.jpeg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f3a500;
+  height: 600px;
+  z-index: 0;
 }
 
-.navbar {
-    background-color: #FAFAFA;
-    border: 0px;
-    font-size: 15px;
-}
-
-.navbar-default .navbar-nav li a {
-    color: #c5c5c5;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-    color: #afafaf;
-    background-color: #e7e7e7;
-}
-    
-.navbar-default .navbar-brand {
-    color: #F3A500;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
-}
-
+/* line 63, scss/main.scss */
 body {
-    color: #7B7B7B;
-    font-family: 'Bitter', serif;
-    font-size: 20px;
+  color: #7b7b7b;
+  font-family: "Bitter", serif;
+  font-size: 20px;
 }
 
+/* line 69, scss/main.scss */
 .header {
-    padding: 40px 15px;
-    position: relative;
-    height: 400px;
-    margin-top: 100px;
+  padding: 40px 15px;
+  position: relative;
+  height: 400px;
+  margin-top: 100px;
 }
 
+/* line 76, scss/main.scss */
 #headshot {
-    top: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 150px;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 150px;
+  border: 2px solid white;
 }
 
+/* line 85, scss/main.scss */
 .name {
-    max-height: 380px;
-    position: relative;
-    text-align:center;
-    margin-top: 90px;
+  max-height: 380px;
+  position: relative;
+  text-align: center;
+  margin-top: 90px;
 }
 
+/* line 92, scss/main.scss */
 .name h1 {
-    font-size: 50pt;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: bold;
+  font-size: 50pt;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
 }
 
+/* line 98, scss/main.scss */
 .tagline {
-    margin-top: 45px;
-    text-align: center;
+  margin-top: 45px;
+  text-align: center;
 }
 
+/* line 103, scss/main.scss */
 .tagline p {
-    font-weight: 500;
-    font-size: 22px;
-    color: #7B7B7B;
-    font-family: 'Monteserrat Alternates', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #7b7b7b;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
+/* line 110, scss/main.scss */
 .content {
-    margin-top: 50px;
-    padding-bottom: 40px;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 50px;
+  margin-left: 100px;
+  padding-bottom: 40px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* line 119, scss/main.scss */
+#logo {
+  display: none;
+  position: fixed;
+  margin-left: -300px;
+  margin-top: -400px;
+  z-index: -999;
+}
+
+/* line 127, scss/main.scss */
 .heading {
-    font-family: 'Monteserrat Alternates', sans-serif;
-    font-weight: 600;
-    color: #F3A500;
-    font-size: 45px; 
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  color: #f3a500;
+  font-size: 45px;
 }
 
+/* line 134, scss/main.scss */
 .footer {
-    color: #c5c5c5;
-    font-size: 15px;
-    padding: 15px;
-    margin-top: 60px;
-    text-align: center;
-    margin-bottom: 0;
+  color: #c5c5c5;
+  font-size: 15px;
+  padding: 15px;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 0;
 }
-
-    
-/*
-grey: #7B7B7B
-orange: #F3A500 
-*/
