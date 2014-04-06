@@ -17,23 +17,27 @@
 }
 @media screen and (max-width: 500px) {
   /* line 37, scss/main.scss */
+  body #main-container {
+    background-attachment: scroll;
+  }
+  /* line 41, scss/main.scss */
   body .heading {
     font-size: 30px;
   }
-  /* line 41, scss/main.scss */
+  /* line 45, scss/main.scss */
   body #logo {
     display: none;
   }
-  /* line 45, scss/main.scss */
+  /* line 49, scss/main.scss */
   body .content {
     font-size: 15px;
   }
-  /* line 49, scss/main.scss */
+  /* line 53, scss/main.scss */
   body .footer {
     font-size: 13px;
   }
 }
-/* line 55, scss/main.scss */
+/* line 59, scss/main.scss */
 #main-container {
   background: url("../images/background.jpeg") no-repeat center center fixed;
   background-size: cover;
@@ -42,14 +46,14 @@
   z-index: 0;
 }
 
-/* line 63, scss/main.scss */
+/* line 67, scss/main.scss */
 body {
   color: #7b7b7b;
   font-family: "Bitter", serif;
   font-size: 20px;
 }
 
-/* line 69, scss/main.scss */
+/* line 73, scss/main.scss */
 .header {
   padding: 40px 15px;
   position: relative;
@@ -57,7 +61,7 @@ body {
   margin-top: 100px;
 }
 
-/* line 76, scss/main.scss */
+/* line 80, scss/main.scss */
 #headshot {
   top: 0;
   left: 0;
@@ -67,7 +71,7 @@ body {
   border: 2px solid white;
 }
 
-/* line 85, scss/main.scss */
+/* line 89, scss/main.scss */
 .name {
   max-height: 380px;
   position: relative;
@@ -75,20 +79,20 @@ body {
   margin-top: 90px;
 }
 
-/* line 92, scss/main.scss */
+/* line 96, scss/main.scss */
 .name h1 {
   font-size: 50pt;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: bold;
 }
 
-/* line 98, scss/main.scss */
+/* line 102, scss/main.scss */
 .tagline {
   margin-top: 45px;
   text-align: center;
 }
 
-/* line 103, scss/main.scss */
+/* line 107, scss/main.scss */
 .tagline p {
   font-weight: 500;
   font-size: 22px;
@@ -96,7 +100,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-/* line 110, scss/main.scss */
+/* line 114, scss/main.scss */
 .content {
   margin-top: 50px;
   margin-left: 100px;
@@ -106,7 +110,7 @@ body {
   margin-right: auto;
 }
 
-/* line 119, scss/main.scss */
+/* line 123, scss/main.scss */
 #logo {
   display: none;
   position: fixed;
@@ -115,7 +119,7 @@ body {
   z-index: -999;
 }
 
-/* line 127, scss/main.scss */
+/* line 131, scss/main.scss */
 .heading {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -123,7 +127,7 @@ body {
   font-size: 45px;
 }
 
-/* line 134, scss/main.scss */
+/* line 138, scss/main.scss */
 .footer {
   color: #c5c5c5;
   font-size: 15px;
