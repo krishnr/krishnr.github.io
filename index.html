@@ -68,18 +68,25 @@
         <script src="js/typed.js"></script>
         <script>
           $(function(){
-              $("#typingAnimation").typed({
-                strings: ["Engineering student", "Passionate techie", 
-"Part-time guitarist", " "],
-                typeSpeed: 40,
-                backDelay: 1000,
-                callback: function(){ 
+              if($(window).width() > 640) {
+                  $("#typingAnimation").typed({
+                    strings: ["Engineering student", "Passionate techie", 
+    "Part-time guitarist", " "],
+                    typeSpeed: 40,
+                    backDelay: 1000,
+                    callback: function(){ 
+                        $(".typing").hide();
+                        $("#typed-cursor").hide();
+                        $("#typeAnimation").hide();
+                        $(".header").fadeIn(1000);
+                    }
+                  });
+              } else {
                     $(".typing").hide();
                     $("#typed-cursor").hide();
                     $("#typeAnimation").hide();
-                    $(".header").fadeIn(1000);
-                }
-              });
+                    $(".header").show();
+              }
           });
         </script>
         
