@@ -8,7 +8,7 @@
 
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="icons/sprites/sprites.css" rel="stylesheet" type="text/css">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,17 +20,22 @@
     <body>
     <div id="main-container">
         <div class="container">
+            <div class="row typing">
+                <div class="col-md-12">
+                <span id="typingAnimation"></span>
+                </div>
+            </div>
             <div class="header row">
                 <div class="col-md-1"></div>
                 <div class="col-md-4 headshot">
                     <img src="images/Headshot.jpg" class="img-responsive" id="headshot" alt="Responsive image">
                 </div>
-                <div class="col-md-6 name">
-                    <h1>Krishn Ramesh </h1>
+                <div class="col-md-7 name">
+                    <h1>Krishn Ramesh</h1>
                 </div>
-                <div class="col-md-1"></div>
             </div>
             <div class="tagline row">
+                
             </div>
         </div>
     </div>
@@ -41,7 +46,7 @@
             <div class="content row">
                 <div class="col-md-12">
                     <h1 class="heading">About Me</h1>
-                    <p>I am a Systems Design Engineering student at the University of Waterloo. I live at the intersection of (innovative) technology, (good) design and (meaningful) business. I am eclectically curious, broad-minded and entrepreneurial, with a keen eye for thoughtful design. I see things differently. I am an efficient and proficient problem-solver, and I absolutely love learning new things that will make me smarter, no matter what the topic. <br><br>When I'm not following tech blogs or reading books, I quite enjoy creating, tinkering with and hacking things. The terms "nerd", "geek", "techie" and "coder" all apply to me, and I embrace them. Though, perhaps not all of their negative stereotypes. I consider myself a leader and I love talking to and working with others, especially if they think differently than I do. <br><br>I am incredibly passionate about technology and its ability to change the world; I aspire to be part of that change. (to that end, I idolize and am inspired by Elon Musk and Sal Khan)</p>
+                    <p>I am a Systems Design Engineering student at the University of Waterloo. I live at the intersection of (innovative) technology, (thoughtful) design and (meaningful) business. I am eclectically curious, broad-minded and entrepreneurial, with a keen eye for good design. I see things differently. I am an efficient and proficient problem-solver, and I absolutely love learning new things that will make me smarter, no matter what the topic. <br><br>When I'm not following tech blogs or reading books, I quite enjoy creating, tinkering with and hacking things. I am incredibly passionate about technology and its ability to change the world; I aspire to be part of that change. (to that end, I idolize and am inspired by Elon Musk and Sal Khan)</p>
                 </div>
             </div>
         </div>
@@ -49,13 +54,36 @@
             <div class="container">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <p>Designed by Krishn in Ontario</p>
+                    <p>Designed by Krishn in Ontario <br>
+                    (with <i class="icon-heart"></i>  and a  <i class="icon-laptop"></i> )</p>
                 </div>
             </div>
         </div>
+                
         
-        <!-- JavaScript -->
+                <!-- JavaScript -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/typed.js"></script>
+        <script>
+          $(function(){
+              $("#typingAnimation").typed({
+                strings: ["Engineering student", "Passionate techie", 
+"Part-time guitarist", " "],
+                typeSpeed: 40,
+                backDelay: 1000,
+                callback: function(){ 
+                    $(".typing").hide();
+                    $("#typed-cursor").hide();
+                    $("#typeAnimation").hide();
+                    $(".header").fadeIn(1000);
+                }
+              });
+          });
+        </script>
+        
+        
+
     </body>
 </html>
