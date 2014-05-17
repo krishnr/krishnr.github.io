@@ -13,13 +13,6 @@ $(document).ready(function() {
                 
         $("#main-container").css("height", windowHeight);
         
-        
-        var typingHeight = $(".typing").height();
-        
-        var $top = (windowHeight - typingHeight) /2;
-        
-        $(".typing").css("margin-top", $top);
-        
         var headerHeight = $(".header").height();
         
         $top = (windowHeight - headerHeight) / 2;

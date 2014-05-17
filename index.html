@@ -20,11 +20,6 @@
     <body>
     <div id="main-container">
         <div class="container">
-            <div class="row typing">
-                <div class="col-md-12">
-                <span id="typingAnimation"></span>
-                </div>
-            </div>
             <div class="header row">
                 <div class="col-md-1"></div>
                 <div class="col-md-4 headshot">
@@ -32,11 +27,13 @@
                 </div>
                 <div class="col-md-7 name">
                     <h1>Krishn Ramesh</h1>
+                    <div class="typing">
+                        <span id="typingAnimation"></span>
+                    </div>
                 </div>
             </div>
             <div class="tagline row">
                 
-            </div>
         </div>
     </div>
         <div class="container">
@@ -71,21 +68,17 @@
               if($(window).width() > 640) {
                   $("#typingAnimation").typed({
                     strings: ["Engineering student", "Passionate techie", 
-    "Part-time guitarist", " "],
-                    typeSpeed: 40,
+    "Part-time guitarist"],
+                    typeSpeed: 50,
                     backDelay: 1000,
-                    callback: function(){ 
-                        $(".typing").hide();
-                        $("#typed-cursor").hide();
-                        $("#typeAnimation").hide();
-                        $(".header").fadeIn(1000);
-                    }
+                    loop: true,
+                    loopCount: false,
+                    callback: function(){}
                   });
               } else {
                     $(".typing").hide();
                     $("#typed-cursor").hide();
                     $("#typeAnimation").hide();
-                    $(".header").show();
               }
           });
         </script>

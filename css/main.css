@@ -58,29 +58,30 @@ body {
 
 /* line 76, scss/main.scss */
 .typing {
-  width: 700px;
+  width: 400px;
   height: auto;
-  font-size: 42px;
+  font-size: 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: rgba(123, 123, 123, 0.2);
+  border-radius: 10px;
+  padding: 5px;
 }
 
-/* line 85, scss/main.scss */
+/* line 88, scss/main.scss */
 #typingAnimation {
-  background-color: rgba(123, 123, 123, 0.2);
   color: #c5c5c5;
 }
 
-/* line 90, scss/main.scss */
+/* line 92, scss/main.scss */
 .header {
   padding: 40px 15px;
   height: auto;
   margin: auto;
-  display: none;
 }
 
-/* line 97, scss/main.scss */
+/* line 98, scss/main.scss */
 #headshot {
   top: 0;
   left: 0;
@@ -89,7 +90,7 @@ body {
   border-radius: 150px;
 }
 
-/* line 105, scss/main.scss */
+/* line 106, scss/main.scss */
 .name {
   max-height: 380px;
   position: relative;
@@ -97,20 +98,20 @@ body {
   margin-top: 90px;
 }
 
-/* line 112, scss/main.scss */
+/* line 113, scss/main.scss */
 .name h1 {
   font-size: 50pt;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: bold;
 }
 
-/* line 118, scss/main.scss */
+/* line 119, scss/main.scss */
 .tagline {
   margin-top: 45px;
   text-align: center;
 }
 
-/* line 123, scss/main.scss */
+/* line 124, scss/main.scss */
 .tagline p {
   font-weight: 500;
   font-size: 22px;
@@ -118,7 +119,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-/* line 130, scss/main.scss */
+/* line 131, scss/main.scss */
 .content {
   padding-top: 100px;
   padding-bottom: 40px;
@@ -127,9 +128,10 @@ body {
   margin-right: auto;
   text-align: left;
   line-height: 30px;
+  color: #7b7b7b;
 }
 
-/* line 140, scss/main.scss */
+/* line 142, scss/main.scss */
 #logo {
   display: none;
   position: fixed;
@@ -138,7 +140,7 @@ body {
   z-index: -10;
 }
 
-/* line 148, scss/main.scss */
+/* line 150, scss/main.scss */
 .heading {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -146,7 +148,7 @@ body {
   font-size: 45px;
 }
 
-/* line 155, scss/main.scss */
+/* line 157, scss/main.scss */
 .footer {
   color: #c5c5c5;
   font-size: 15px;
@@ -156,7 +158,7 @@ body {
   margin-bottom: 0;
 }
 
-/* line 164, scss/main.scss */
+/* line 166, scss/main.scss */
 #typed-cursor {
   opacity: 1;
   font-weight: 100;
@@ -168,51 +170,51 @@ body {
 }
 
 @keyframes blink {
-  /* line 175, scss/main.scss */
+  /* line 177, scss/main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 176, scss/main.scss */
+  /* line 178, scss/main.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 177, scss/main.scss */
+  /* line 179, scss/main.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes blink {
-  /* line 180, scss/main.scss */
+  /* line 182, scss/main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 181, scss/main.scss */
+  /* line 183, scss/main.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 182, scss/main.scss */
+  /* line 184, scss/main.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes blink {
-  /* line 185, scss/main.scss */
+  /* line 187, scss/main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 186, scss/main.scss */
+  /* line 188, scss/main.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 187, scss/main.scss */
+  /* line 189, scss/main.scss */
   100% {
     opacity: 1;
   }
