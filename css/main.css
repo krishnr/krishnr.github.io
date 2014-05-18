@@ -142,6 +142,12 @@ body {
 }
 
 /* line 151, scss/main.scss */
+.logos {
+  font-size: 40px;
+  color: #7b7b7b;
+}
+
+/* line 156, scss/main.scss */
 .heading {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -149,7 +155,7 @@ body {
   font-size: 45px;
 }
 
-/* line 158, scss/main.scss */
+/* line 163, scss/main.scss */
 .footer {
   color: #c5c5c5;
   font-size: 15px;
@@ -159,7 +165,7 @@ body {
   margin-bottom: 0;
 }
 
-/* line 167, scss/main.scss */
+/* line 172, scss/main.scss */
 #typed-cursor {
   opacity: 1;
   font-weight: 100;
@@ -171,23 +177,6 @@ body {
 }
 
 @keyframes blink {
-  /* line 178, scss/main.scss */
-  0% {
-    opacity: 1;
-  }
-
-  /* line 179, scss/main.scss */
-  50% {
-    opacity: 0;
-  }
-
-  /* line 180, scss/main.scss */
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes blink {
   /* line 183, scss/main.scss */
   0% {
     opacity: 1;
@@ -204,7 +193,7 @@ body {
   }
 }
 
-@-moz-keyframes blink {
+@-webkit-keyframes blink {
   /* line 188, scss/main.scss */
   0% {
     opacity: 1;
@@ -216,6 +205,23 @@ body {
   }
 
   /* line 190, scss/main.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  /* line 193, scss/main.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 194, scss/main.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 195, scss/main.scss */
   100% {
     opacity: 1;
   }
