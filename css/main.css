@@ -18,35 +18,39 @@
   body .name h1 {
     font-size: 40pt;
   }
+  /* line 36, scss/main.scss */
+  body .content {
+    padding-top: 40px;
+  }
 }
 @media screen and (max-width: 500px) {
-  /* line 41, scss/main.scss */
+  /* line 45, scss/main.scss */
   body #main-container {
     background-attachment: scroll;
   }
-  /* line 45, scss/main.scss */
+  /* line 49, scss/main.scss */
   body .heading {
     font-size: 30px;
   }
-  /* line 49, scss/main.scss */
+  /* line 53, scss/main.scss */
   body #logo {
     display: none;
   }
-  /* line 53, scss/main.scss */
+  /* line 57, scss/main.scss */
   body .content {
     padding-top: 25px;
     font-size: 15px;
   }
-  /* line 58, scss/main.scss */
+  /* line 62, scss/main.scss */
   body .footer {
     font-size: 13px;
   }
-  /* line 62, scss/main.scss */
+  /* line 66, scss/main.scss */
   body .logos {
     font-size: 40px;
   }
 }
-/* line 68, scss/main.scss */
+/* line 72, scss/main.scss */
 #main-container {
   background: url("../images/background.jpeg") no-repeat center center fixed;
   background-size: cover;
@@ -54,14 +58,14 @@
   z-index: 0;
 }
 
-/* line 75, scss/main.scss */
+/* line 79, scss/main.scss */
 body {
   color: #7b7b7b;
   font-family: "Bitter", serif;
   font-size: 20px;
 }
 
-/* line 81, scss/main.scss */
+/* line 85, scss/main.scss */
 .typing {
   max-width: 400px;
   height: auto;
@@ -74,19 +78,19 @@ body {
   padding: 5px;
 }
 
-/* line 93, scss/main.scss */
+/* line 97, scss/main.scss */
 #typingAnimation {
   color: #c5c5c5;
 }
 
-/* line 97, scss/main.scss */
+/* line 101, scss/main.scss */
 .header {
   padding: 40px 15px;
   height: auto;
   margin: auto;
 }
 
-/* line 103, scss/main.scss */
+/* line 107, scss/main.scss */
 #headshot {
   top: 0;
   left: 0;
@@ -95,7 +99,7 @@ body {
   border-radius: 150px;
 }
 
-/* line 111, scss/main.scss */
+/* line 115, scss/main.scss */
 .name {
   max-height: 380px;
   position: relative;
@@ -103,20 +107,20 @@ body {
   margin-top: 90px;
 }
 
-/* line 118, scss/main.scss */
+/* line 122, scss/main.scss */
 .name h1 {
   font-size: 50pt;
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: bold;
 }
 
-/* line 124, scss/main.scss */
+/* line 128, scss/main.scss */
 .tagline {
   margin-top: 45px;
   text-align: center;
 }
 
-/* line 129, scss/main.scss */
+/* line 133, scss/main.scss */
 .tagline p {
   font-weight: 500;
   font-size: 22px;
@@ -124,7 +128,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-/* line 136, scss/main.scss */
+/* line 140, scss/main.scss */
 .content {
   padding-top: 100px;
   padding-bottom: 40px;
@@ -136,7 +140,7 @@ body {
   color: #7b7b7b;
 }
 
-/* line 147, scss/main.scss */
+/* line 151, scss/main.scss */
 #logo {
   display: none;
   position: fixed;
@@ -145,17 +149,23 @@ body {
   z-index: -10;
 }
 
-/* line 155, scss/main.scss */
+/* line 159, scss/main.scss */
 .logos {
   font-size: 50px;
   color: #7b7b7b;
+  padding-top: 30px;
 }
-/* line 159, scss/main.scss */
+/* line 164, scss/main.scss */
 .logos a, .logos a:link, .logos a:visited, .logos a:active {
   color: #7b7b7b;
 }
 
-/* line 165, scss/main.scss */
+/* line 170, scss/main.scss */
+.contact {
+  padding-top: 30px;
+}
+
+/* line 174, scss/main.scss */
 .heading {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 600;
@@ -163,17 +173,17 @@ body {
   font-size: 45px;
 }
 
-/* line 172, scss/main.scss */
+/* line 181, scss/main.scss */
 .footer {
   color: #c5c5c5;
   font-size: 15px;
   padding: 15px;
-  margin-top: 60px;
+  margin-top: 40px;
   text-align: center;
   margin-bottom: 0;
 }
 
-/* line 181, scss/main.scss */
+/* line 190, scss/main.scss */
 #typed-cursor {
   opacity: 1;
   font-weight: 100;
@@ -185,51 +195,51 @@ body {
 }
 
 @keyframes blink {
-  /* line 192, scss/main.scss */
+  /* line 201, scss/main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 193, scss/main.scss */
+  /* line 202, scss/main.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 194, scss/main.scss */
+  /* line 203, scss/main.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes blink {
-  /* line 197, scss/main.scss */
+  /* line 206, scss/main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 198, scss/main.scss */
+  /* line 207, scss/main.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 199, scss/main.scss */
+  /* line 208, scss/main.scss */
   100% {
     opacity: 1;
   }
 }
 
 @-moz-keyframes blink {
-  /* line 202, scss/main.scss */
+  /* line 211, scss/main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 203, scss/main.scss */
+  /* line 212, scss/main.scss */
   50% {
     opacity: 0;
   }
 
-  /* line 204, scss/main.scss */
+  /* line 213, scss/main.scss */
   100% {
     opacity: 1;
   }
