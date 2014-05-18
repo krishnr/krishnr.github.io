@@ -17,32 +17,6 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
-        <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/typed.js"></script>
-        <script>
-          $(function(){
-              if($(window).width() > 640) {
-                  $("#typingAnimation").typed({
-                    strings: ["Engineering student", "Passionate techie", 
-    "Part-time guitarist", "Builder of cool things", "Reader of literature", "Aspiring entrepreneur", "Eclectically curious", "Self-professed nerd", "Film aficionado", "Lover of good design", "Sports fanatic", "Science enthusiast", "Ambitious philomath"],
-                    typeSpeed: 50,
-                    backDelay: 1000,
-                    loop: true,
-                    loopCount: false,
-                    callback: function(){}
-                  });
-              } else {
-                    $(".typing").hide();
-                    $("#typed-cursor").hide();
-                    $("#typeAnimation").hide();
-              }
-          });
-        </script>
-        
     </head>
     <body>
     <div id="main-container">
@@ -84,7 +58,7 @@
                 </div>
                 <div class="col-md-12 logos">
                     <h1 class="heading">Find Me Online</h1>
-                    <a href="http://www.github.com/krishnr"><i class="fa fa-github-square"></i></a> &nbsp; <a href="http://www.behance.net/krishnr"><i class="fa fa-behance"></i></a> &nbsp; <a href="http://www.linkedin.com/in/krishnramesh/"><i class="fa fa-linkedin-square"></i></a> &nbsp;<a href="http://www.facebook.com/krishn.r"><i class="fa fa-facebook-square"></i> </a> &nbsp;<a href="http://www.twitter.com/krishnramesh"><i class="fa fa-twitter-square"></i></a> &nbsp;<a href="http://www.instagram.com/krishnramesh"><i class="fa fa-instagram"></i></a> &nbsp;<a href ="http://google.com/+KrishnRamesh"><i class="fa fa-google-plus-square"></i></a> &nbsp;<a href="http://eclecticexplorer.tumblr.com/"><i class="fa fa-tumblr-square"></i></a>
+                    <a href="http://www.github.com/krishnr"><i class="fa fa-github-square"></i></a> &nbsp; <a href="http://www.behance.net/krishnr"><i class="fa fa-behance"></i></a> &nbsp; <a href="http://www.linkedin.com/in/krishnramesh/"><i class="fa fa-linkedin-square"></i></a> &nbsp;<a href="http://www.facebook.com/krishn.r"><i class="fa fa-facebook-square"></i> </a> &nbsp;<a href="http://www.twitter.com/krishnramesh"><i class="fa fa-twitter-square"></i></a> &nbsp;<a href="http://www.instagram.com/krishnramesh"><i class="fa fa-instagram"></i></a> &nbsp;<a href ="http://google.com/+KrishnRamesh"><i class="fa fa-google-plus-square"></i></a> &nbsp;<a href="http://www.reddit.com/user/krishnr"><i class="fa fa-reddit-square"></i></a> &nbsp;<a href="http://eclecticexplorer.tumblr.com/"><i class="fa fa-tumblr-square"></i></a>
                 </div>
                 <div class="col-md-12">
                     <h1 class="heading">Get In Touch</h1>
@@ -103,5 +77,34 @@
                 </div>
             </div>
         </div>
+                
+        
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/typed.js"></script>
+        <script>
+          $(function(){
+              if($(window).width() > 640) {
+                  $("#typingAnimation").typed({
+                    strings: ["Engineering student", "Passionate techie", 
+    "Part-time guitarist", "Builder of cool things", "Reader of literature", "Aspiring entrepreneur", "Eclectically curious", "Self-professed nerd", "Film aficionado", "Lover of good design", "Sports fanatic", "Science enthusiast", "Ambitious philomath"],
+                    typeSpeed: 50,
+                    backDelay: 1000,
+                    loop: true,
+                    loopCount: false,
+                    callback: function(){}
+                  });
+              } else {
+                    $(".typing").hide();
+                    $("#typed-cursor").hide();
+                    $("#typeAnimation").hide();
+              }
+          });
+        </script>
+        
+        
+
     </body>
 </html>
