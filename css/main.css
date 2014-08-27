@@ -20,8 +20,8 @@
   }
   /* line 37, scss/main.scss */
   body .content {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
     padding-top: 40px;
   }
 }
