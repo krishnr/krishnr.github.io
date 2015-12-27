@@ -256,3 +256,13 @@ body {
     opacity: 1;
   }
 }
+
+.blog-posts {
+  display: flex;
+  margin: 20px 0;
+}
+
+.contact-icon {
+  width: 10px;
+  padding-right: 25px;
+}
