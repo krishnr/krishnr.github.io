@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaapi — dial in your pourover</title>
+    <meta name="description" content="Kaapi helps you dial in your pourover coffee faster. Log each brew, rate how it tastes, and get one adjustment. For iPhone.">
+    <meta name="color-scheme" content="dark">
+    <meta property="og:title" content="Kaapi — dial in your pourover">
+    <meta property="og:description" content="Log each brew, rate how it tastes, and get one adjustment. Repeat until you're dialed in.">
+    <meta property="og:image" content="https://krishn.me/images/kaapi-icon.png">
+    <meta property="og:url" content="https://krishn.me/kaapi">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="/images/kaapi-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/kaapi-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600&display=swap">
+    <style>
+      :root {
+        --bg: #0f0e0c;
+        --surface: #1c1a17;
+        --border: #302e2a;
+        --text: #f1ece2;
+        --text-strong: #fcfaf3;
+        --muted: #a8a194;
+        --muted-2: #807a6e;
+        --accent: #d4b378;
+        --ink: #100a04;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible",
+          -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 17px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+      header { margin-bottom: 3rem; }
+      .mark { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
+      .mark img { width: 52px; height: 52px; border-radius: 12px; display: block; }
+      .mark span {
+        font-family: Fraunces, Georgia, serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--accent);
+        letter-spacing: -0.02em;
+      }
+      h1 {
+        font-family: Fraunces, Georgia, serif;
+        font-weight: 500;
+        font-size: 2.25rem;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--text-strong);
+        margin: 2rem 0 0.75rem;
+      }
+      h2 {
+        font-family: "Martian Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 3rem 0 0.25rem;
+      }
+      h2 + p, h2 + .card { margin-top: 1rem; }
+      h3 {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        color: var(--text-strong);
+        margin: 2rem 0 0.35rem;
+      }
+      .lede { font-size: 1.1875rem; color: var(--text); margin: 0 0 1.5rem; }
+      p { margin: 0 0 1.1rem; }
+      a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(212, 179, 120, 0.35); }
+      a:hover { border-bottom-color: var(--accent); }
+      .muted { color: var(--muted); }
+      .small { font-size: 0.9375rem; color: var(--muted); }
+      ul { padding-left: 1.15rem; margin: 0 0 1.1rem; }
+      li { margin-bottom: 0.45rem; }
+      hr { border: 0; border-top: 1px solid var(--border); margin: 3rem 0; }
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1.35rem 1.5rem;
+        margin: 0 0 1.1rem;
+      }
+      .card h3 { margin-top: 0; }
+      .card p:last-child, .card ul:last-child { margin-bottom: 0; }
+      .btn {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--ink);
+        font-weight: 600;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        border: 0;
+        text-decoration: none;
+      }
+      .btn:hover { background: #e8c98a; border: 0; }
+      code {
+        font-family: "Martian Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.82em;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 0.1em 0.4em;
+      }
+      footer {
+        margin-top: 4rem;
+        padding-top: 1.75rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.9375rem;
+        color: var(--muted-2);
+      }
+      footer a { color: var(--muted); border-bottom-color: rgba(168, 161, 148, 0.3); }
+      @media (max-width: 34rem) {
+        .wrap { padding: 2rem 1.25rem 3.5rem; }
+        h1 { font-size: 1.875rem; }
+        body { font-size: 16px; }
+      }
+      .hero { text-align: center; margin-bottom: 3.5rem; }
+      .hero-icon { width: 88px; height: 88px; border-radius: 20px; display: block; margin: 0 auto 1.1rem; }
+      .wordmark {
+        font-family: Fraunces, Georgia, serif;
+        font-size: 1.75rem;
+        font-weight: 500;
+        color: var(--accent);
+        letter-spacing: -0.02em;
+        margin: 0 0 1.5rem;
+      }
+      .hero h1 { font-size: 2.5rem; margin: 0 auto 1.1rem; max-width: 20ch; }
+      .hero .lede { max-width: 46ch; margin: 0 auto 2rem; color: var(--muted); }
+      .cta { margin: 0 0 0.75rem; }
+      .badge {
+        display: inline-block;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        color: var(--muted);
+        border-radius: 999px;
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9375rem;
+      }
+      .hero .small { margin: 0; }
+      .shots {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: 0 0 1rem;
+      }
+      .shots figure { margin: 0; }
+      .shots img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+      }
+      .shots figcaption {
+        font-size: 0.875rem;
+        color: var(--muted-2);
+        text-align: center;
+        margin-top: 0.7rem;
+        line-height: 1.45;
+      }
+      @media (max-width: 40rem) {
+        .hero h1 { font-size: 1.875rem; }
+        .shots { grid-template-columns: 1fr; gap: 2.25rem; max-width: 22rem; margin-inline: auto; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="hero">
+        <img class="hero-icon" src="/images/kaapi-icon.png" alt="Kaapi app icon">
+        <p class="wordmark">kaapi</p>
+        <h1>Your tastiest cup of coffee is only a few adjustments away.</h1>
+        <p class="lede">Kaapi helps you dial in your pourover coffee faster. Log each brew,
+        rate how it tastes, and get one adjustment. Repeat until you're dialed in.</p>
+        <p class="cta">
+          <span class="badge">Coming soon to the App Store</span>
+        </p>
+        <p class="small">For iPhone. Built for the V60.</p>
+      </header>
+
+      <section class="shots" aria-label="Screenshots">
+        <figure>
+          <img src="/images/kaapi/shelf.jpg" alt="A shelf of coffee bags in Kaapi, each showing its roaster, score and number of brews." width="420" loading="lazy">
+          <figcaption>Your shelf, and where each bag got to.</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/kaapi/rate.jpg" alt="Kaapi asking how the extraction tastes, from much too sour to much too bitter, each anchored to a familiar food." width="420" loading="lazy">
+          <figcaption>Rate the cup in words you already use.</figcaption>
+        </figure>
+        <figure>
+          <img src="/images/kaapi/adjust.jpg" alt="Kaapi suggesting one adjustment: try 105 clicks, two clicks finer than last, with the reason underneath." width="420" loading="lazy">
+          <figcaption>Get one change to make next time.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>How it works</h2>
+
+        <div class="card">
+          <h3>Log a brew in a few seconds</h3>
+          <p>Add a bag by pointing your camera at the label. Every field shows what you used
+          last time, and a timer walks you through the brew.</p>
+        </div>
+
+        <div class="card">
+          <h3>Answer two questions</h3>
+          <p>Was it sour or bitter? Was it thin or heavy? Each answer is anchored to something
+          you've actually tasted, so you don't need a cupping vocabulary to use it.</p>
+        </div>
+
+        <div class="card">
+          <h3>Change one thing</h3>
+          <p>Kaapi gives you a single adjustment and the reason for it. One change at a time is
+          the only way the next cup tells you anything. Most bags come good in three or four
+          brews.</p>
+        </div>
+
+        <div class="card">
+          <h3>Every bag teaches the next one</h3>
+          <p>Open a new bag and Kaapi suggests where to start, based on where your own coffees
+          landed. Over time it learns the grind, ratio and temperature you keep coming back to,
+          and which origins and processes you rate highest.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Yours, and only yours</h2>
+        <p>No account, no sign-up, no analytics. Kaapi makes no network requests at all — your
+        brew log lives on your iPhone, and you can export the whole thing as a plain file any
+        time. <a href="/kaapi/privacy">Read the privacy policy</a>.</p>
+      </section>
+
+      <footer>
+        <p>Kaapi is made by <a href="/">Krishn Ramesh</a> in Canada.<br>
+        <a href="/kaapi/support">Support</a> · <a href="/kaapi/privacy">Privacy</a> ·
+        <a href="mailto:krishnr@gmail.com?subject=Kaapi">Contact</a></p>
+      </footer>
+    </main>
+  </body>
+</html>
